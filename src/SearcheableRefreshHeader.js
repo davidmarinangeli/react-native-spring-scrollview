@@ -1,18 +1,9 @@
 import React from 'react';
 import { Text, View } from 'react-native';
-import RefreshHeader, { IHeaderProps, IHeaderState } from 'react-native-spring-scrollview/RefreshHeader';
-import { CloudLoader } from '../CloudLoader';
+import { RefreshHeader, HeaderStatus } from "./RefreshHeader";
+import { CloudLoader } from '../../../src/components/behaviour/CloudLoader';
 
-export type HeaderStatus =
-  | 'waiting'
-  | 'pulling'
-  | 'pullingEnough'
-  | 'pullingCancel'
-  | 'refreshing'
-  | 'cancelRefresh'
-  | 'rebound';
-
-export default class SearcheableRefreshHeader extends RefreshHeader<IHeaderProps, IHeaderState> {
+export default class SearcheableRefreshHeader extends RefreshHeader {
 
   render() {
     return (
