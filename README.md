@@ -1,8 +1,7 @@
 
 
-### React Native Spring ScrollView**！
-
-**Fork of RN Spring ScrollView from bolan9999**
+## React Native Spring ScrollView
+Fork of RN Spring ScrollView from bolan9999
 
 
 ## Examples
