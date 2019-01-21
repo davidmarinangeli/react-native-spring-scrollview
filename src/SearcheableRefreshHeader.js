@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View } from 'react-native';
-import { RefreshHeader, HeaderStatus } from "./RefreshHeader";
 import { CloudLoader } from '../../../src/components/behaviour/CloudLoader';
+import { RefreshHeader } from "./RefreshHeader";
 
 export default class SearcheableRefreshHeader extends RefreshHeader {
 
@@ -19,7 +19,7 @@ export default class SearcheableRefreshHeader extends RefreshHeader {
     );
   }
 
-  private getTitle() {
+  getTitle() {
     const s = this.state.status;
     if (s === 'pullingEnough') {
       return 'Rilascia per aggiornare';
